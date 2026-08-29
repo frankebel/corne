@@ -1,6 +1,8 @@
 {
     "userspace_version": "1.1",
     "build_targets": [
-        ["splitkb/aurora/corne", "frankebel"]
+        ["splitkb/aurora/corne", "frankebel"],
+        ["splitkb/halcyon/corne/rev2", "frankebel", {"HLC_ENCODER_REV2": "1", "TARGET": "splitkb_halcyon_corne_rev2_frankebel_encoder_rev2"}],
+        ["splitkb/halcyon/corne/rev2", "frankebel", {"HLC_CIRQUE_TRACKPAD": "1", "TARGET": "splitkb_halcyon_corne_rev2_frankebel_cirque_trackpad"}]
     ]
 }
