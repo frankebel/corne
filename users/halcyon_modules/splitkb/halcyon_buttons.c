@@ -102,11 +102,8 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
 
                 uint16_t code = KC_TRNS;
 
-                if (is_keyboard_left()) {
-                    code = left_halcyon_buttons[l][btn];
-                } else {
-                    code = right_halcyon_buttons[l][btn];
-                }
+                const uint16_t (*table)[5] = record->event.key.row < ROWS_PER_HAND ? left_halcyon_buttons : right_halcyon_buttons;
+                code = table[l][btn];
 
                 if (code != KC_TRNS) {
                     record->event.pressed ? register_code16(code) : unregister_code16(code);
