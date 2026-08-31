@@ -55,9 +55,6 @@ enum layer_names {
 // Helpful defines
 #define KC_EURO RSFT_T(KC_5)
 #define KC_MM LGUI(KC_SLSH) // mute microphone, set in compositor
-int TAPPING_TERM_PINKY = 200;
-int TAPPING_TERM_THUMB = 120;
-int TAPPING_TERM_INDEX = 120;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_COLEMAK] = LAYOUT_split_3x6_3(
@@ -196,39 +193,3 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 };
-
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        // Lower time for index finger.
-        case HOME_S:
-            return TAPPING_TERM_INDEX;
-        case HOME_E:
-            return TAPPING_TERM_INDEX;
-        // Lower time for left Ctrl.
-        case HOME_R:
-            return TAPPING_TERM - 10;
-        // Raise time for right ring finger.
-        case HOME_I:
-            return TAPPING_TERM + 10;
-        // Lower time for thumbs.
-        case LT_FUN:
-            return TAPPING_TERM_THUMB;
-        case LT_NUM:
-            return TAPPING_TERM_THUMB;
-        case LT_SYM:
-            return TAPPING_TERM_THUMB;
-        case LT_LAY:
-            return TAPPING_TERM_THUMB;
-        case LT_NAV:
-            return TAPPING_TERM_THUMB;
-        case LT_MED:
-            return TAPPING_TERM_THUMB;
-        // Raise time for pinkies.
-        case HOME_A:
-            return TAPPING_TERM_PINKY;
-        case HOME_O:
-            return TAPPING_TERM_PINKY;
-        default:
-            return TAPPING_TERM;
-    }
-}

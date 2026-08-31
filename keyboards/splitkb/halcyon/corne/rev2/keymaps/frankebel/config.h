@@ -16,9 +16,13 @@
 
 #pragma once
 
-// tap hold https://docs.qmk.fm/tap_hold
-#define TAPPING_TERM 150
-#define TAPPING_TERM_PER_KEY
+// timeless home row mods
+// https://www.reddit.com/r/ErgoMechKeyboards/comments/1q1jo3c/urobs_zmk_timeless_home_row_mods_ported_to_native/
+#define TAPPING_TERM 250
+#define PERMISSIVE_HOLD
+#define FLOW_TAP_TERM 150
+#define CHORDAL_HOLD
+#define SPECULATIVE_HOLD
 
 // caps word https://docs.qmk.fm/feature_caps_word
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD

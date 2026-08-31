@@ -32,7 +32,7 @@ Enter the bootloader, then copy the appropriate `.uf2` onto the drive that appea
 ## Features
 
 - [Miryoku](https://github.com/manna-harbour/miryoku) based
-- [home row mods](https://precondition.github.io/home-row-mods)
+- [timeless home row mods](https://www.reddit.com/r/ErgoMechKeyboards/comments/1q1jo3c/urobs_zmk_timeless_home_row_mods_ported_to_native/)
 - [mod-tap](https://docs.qmk.fm/mod_tap)
 - [caps word](https://docs.qmk.fm/feature_caps_word)
 - multiple layers with Colemak as base
