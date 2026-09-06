@@ -24,5 +24,8 @@
 #define CHORDAL_HOLD
 #define SPECULATIVE_HOLD
 
+// https://docs.qmk.fm/feature_debounce_type
+#define DEBOUNCE 15
+
 // caps word https://docs.qmk.fm/feature_caps_word
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
